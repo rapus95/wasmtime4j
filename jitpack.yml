@@ -1,15 +1,2 @@
-# Attempt the standard way first
 jdk:
-  - openjdk22
-
-# Brute-force SDKMan to install Java 22 if JitPack fails to do it automatically
-before_install:
-  - source $HOME/.sdkman/bin/sdkman-init.sh
-  - sdk install java 22.0.2-open || true
-  - sdk default java 22.0.2-open
-  - sdk use java 22.0.2-open
-
-# Override the build step to ensure the Maven Wrapper uses the correct JAVA_HOME
-install:
-  - export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
-  - ./mvnw clean install -DskipTests
+  - openjdk25
