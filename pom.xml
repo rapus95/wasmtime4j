@@ -107,9 +107,7 @@
     <!-- Core modules always included -->
     <modules>
         <module>wasmtime4j</module>
-        <module>wasmtime4j-native</module>
         <module>wasmtime4j-native-loader</module>
-        <module>wasmtime4j-jni</module>
         <module>wasmtime4j-panama</module>
         <module>wasmtime4j-tests</module>
         <module>wasmtime4j-benchmarks</module>
