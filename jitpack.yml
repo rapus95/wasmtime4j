@@ -1,6 +1,4 @@
 jdk:
   - openjdk25
-
 install:
-  # -Dexec.skip=true bypasses the Rust build and the broken grep script
-  - ./mvnw clean install -DskipTests -Dspotless.check.skip=true -Dspotbugs.skip=true -Dexec.skip=true
+  - ./mvnw clean install -DskipTests -Dspotless.check.skip=true -Dspotbugs.skip=true
