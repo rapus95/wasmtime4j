@@ -2,5 +2,5 @@ jdk:
   - openjdk25
 
 install:
-  # Skip tests, skip spotless formatting, AND skip spotbugs static analysis
-  - ./mvnw clean install -DskipTests -Dspotless.check.skip=true -Dspotbugs.skip=true
+  # -Dexec.skip=true bypasses the Rust build and the broken grep script
+  - ./mvnw clean install -DskipTests -Dspotless.check.skip=true -Dspotbugs.skip=true -Dexec.skip=true
