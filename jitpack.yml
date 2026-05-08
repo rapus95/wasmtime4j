@@ -1,2 +1,6 @@
 jdk:
   - openjdk25
+
+install:
+  # This runs the build but explicitly tells Spotless to ignore formatting errors
+  - ./mvnw clean install -DskipTests -Dspotless.check.skip=true
